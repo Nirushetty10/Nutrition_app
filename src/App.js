@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Stats from './Pages/Stats';
 // import Cards from './Pages/Cards';
 import FooterPage from './Pages/FooterPage';
+import Subscribe from './Components/subscribe/Subscribe';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <Stats />
       {/* <Cards /> */}
+      <Subscribe />
       <FooterPage />
     </div>
   )
