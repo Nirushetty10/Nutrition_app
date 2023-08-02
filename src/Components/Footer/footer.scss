@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap');
+.footer_sec {
+    width: 100%;
+    height: 350px;
+    background-color: #FF4500;
+    color: #fff;
+    
+
+    .footer_sec__top {
+        font-family: 'Merriweather Sans', sans-serif;
+        width: 100%;
+        height: 75%;
+        padding: 5rem 4rem 0 4rem;
+        display: flex;
+        justify-content: space-between;
+        
+        .section_left {
+            width: 15%;
+            height: 100%;
+            padding-right: 2rem;
+            border: 1px soid black;
+
+            h1 {
+                font-weight: 500;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
+            h4 {
+               font-weight: 300;
+               font-size: 0.8rem;
+               line-height: 20px;
+               cursor: pointer;
+            }
+        }
+        .section_right {
+            width: 70%;
+            height: 100%;   
+            border: 1px soid black;
+            display: flex;
+            justify-content: space-between;
+
+            .navList {
+                width: 10rem;
+                list-style: none;
+
+                .navListHeading {
+                    font-size: 1.0rem;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+                }
+                li {
+                    font-size: 0.7rem;
+                    font-weight: 300;
+                    color: #efeaea;
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .footer_sec__bottom {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+}
