@@ -1,11 +1,11 @@
 import React from 'react';
 import "./NavBar.scss"
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
-    <div className='nav_bar'>
+    <div className='nav_bar' style={{backgroundColor : `${props.type  === "auth" ? "black" : ""} `}}>
         <div className="logo">NutriDiet</div>
-        <div className="link_section">
+        {!props.type === "auth" && <div className="link_section">
             <div className="link_section__link">
                 <ul>
                     <li>About</li>
@@ -16,7 +16,7 @@ const NavBar = () => {
             <div className="link_section__button">
                 <button>Get Started</button>
             </div>
-        </div>
+        </div>}
     </div>
   )
 }

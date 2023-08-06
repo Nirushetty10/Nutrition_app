@@ -1,6 +1,6 @@
 import React from "react";
 import "./Stats.scss";
-import image from "../images/pexels/pexels-anne-mccarthy-12480410.jpg";
+import image from "../../images/pexels/pexels-anne-mccarthy-12480410.jpg";
 
 let data = [{
   id: 1,

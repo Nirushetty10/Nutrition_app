@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Lora:wght@700&family=Merriweather+Sans:wght@300&display=swap');
+
+.signup_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+    font-family: 'Merriweather Sans';
+
+    .signup_input {
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 15px;
+        border: 1px solid #555;
+        outline: none;
+        padding: 0 1.5rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .signup_email__error, .signup_name__error , .signup_password__error {
+        width: 100%;
+        height: 1rem;
+    }
+    .signup_button {
+        width: 100%;
+        height: 3rem;
+        border: none;
+        border-radius: 15px;
+        margin-top: 1rem;
+        background-color: rgb(7, 7, 7);
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    .signup_bottom_info {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.8rem;
+        color: #555;
+        font-weight: 500;
+
+        .signup_info_span {
+           color :rgb(7, 7, 7);
+           cursor: pointer;
+        }
+    }
+}

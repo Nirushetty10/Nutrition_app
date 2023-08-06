@@ -1,15 +1,19 @@
 import React from 'react';
 import "./App.css"
 import Home from './Pages/Home';
-import Stats from './Pages/Stats';
-import Cards from './Pages/Cards';
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import Auth from './Pages/Auth';
 
 function App() {
   return (
     <div>
-      <Home />
-      <Stats />
-      <Cards />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/auth" element={<Auth />}/>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   )
 }
