@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+
+.card_container {
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+
+  .card_header {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Lora", serif;
+      font-size: 46px;
+    }
+  }
+  .card_content {
+    height: 65%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    perspective: 1000px;
+
+    .card_content:focus {
+      outline: 0;
+    }
+    .card_list {
+      position: relative;
+      height: 100%;
+      width: 27%;
+      border-radius: 1rem;
+      text-align: center;
+      transition: transform 0.6s;
+      cursor: pointer;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+      .card_front {
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+        .header_tags {
+          position: absolute;
+          color: #fff;
+          top: 65%;
+          bottom: 35%;
+          transform: translate(50%, 50%);
+        }
+      }
+      .card_front,
+      .card_back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        overflow: hidden;
+      }
+      .card_back {
+        
+        background-color: #ff4500;
+        color: white;
+        transform: rotateY(180deg);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        font-family: "Lora", serif;
+        
+      }
+
+      
+    }
+    .card_list:hover  {
+      transform: rotateY(180deg);
+    }
+  }
+}

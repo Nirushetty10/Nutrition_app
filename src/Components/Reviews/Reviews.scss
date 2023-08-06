@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+.sliderContainer {
+  position: relative;
+  background-color: rgb(255, 218, 204);
+  height: 100vh;
+  width: 100%;
+  // margin-top: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  .sliderImageContainer {
+    display: flex;
+
+    box-sizing: border-box;
+
+    .slide_content {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      min-width: 100%;
+
+      padding: 4rem;
+      box-sizing: border-box;
+
+      .slide_left_container {
+        width: 48%;
+        height: 100%;
+        border-radius: 1rem;
+        img {
+          width: 88%;
+          height: 90%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+      }
+      .slide_right_container {
+        width: 45%;
+        height: 100%;
+        position: relative;
+        .fa-quote-right {
+          position: absolute;
+          bottom: 1.5rem;
+          right: 0;
+          color: #ff4500;
+          font-size: 5rem;
+        }
+        .fa-quote-left {
+          position: absolute;
+          left: 0;
+          top: 1.5rem;
+          color: #ff4500;
+          font-size: 5rem;
+        }
+        .rating_icons_container {
+          text-align: center;
+          font-family: "Lora", serif;
+          font-size: 25px;
+          .fa-solid {
+            color: #ffc700;
+          }
+        }
+      }
+    }
+  }
+  .fa-arrow-right {
+    color: #ff4500;
+    position: absolute;
+    right: 2rem;
+    top: 18rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .fa-arrow-left {
+    position: absolute;
+    color: #ff4500;
+    top: 18rem;
+    left: 2rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+}

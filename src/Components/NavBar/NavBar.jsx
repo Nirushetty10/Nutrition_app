@@ -5,7 +5,7 @@ const NavBar = (props) => {
   return (
     <div className='nav_bar' style={{backgroundColor : `${props.type  === "auth" ? "black" : ""} `}}>
         <div className="logo">NutriDiet</div>
-        {!props.type === "auth" && <div className="link_section">
+        {props.type === "auth" ? null : <div className="link_section">
             <div className="link_section__link">
                 <ul>
                     <li>About</li>
