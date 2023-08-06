@@ -13,7 +13,6 @@ function App() {
           <Route path="/auth" element={<Auth />}/>
         </Routes>
       </BrowserRouter>
-      
     </div>
   )
 }
