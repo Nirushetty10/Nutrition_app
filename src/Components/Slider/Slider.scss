@@ -63,7 +63,7 @@
 
             .progress-fill {
                height: 100%;
-               background-color: rgb(252, 124, 4);
+               background-color: #FF4500;
                animation: fill 4s ease;
             }
             @keyframes fill {
@@ -147,11 +147,17 @@
             .first_button {
                 background-color: #FF4500;
                 color: #ffffff ;
+                border : 2px solid #FF4500;
             }
             .second_button {
                 background-color: rgba(255, 255, 255, 0.65);
                 color: #0e0d0d;
                 border: 1px solid #FF4500;
+
+                &:hover {
+                    background-color: #ff4500;
+                    color: #fff;
+                }
             }
         }
     }

@@ -6,6 +6,7 @@
     flex-direction: column;
     margin-top: 0.8rem;
     font-family: 'Merriweather Sans';
+    padding-top: 1.1rem;
 
     .signup_input {
         width: 100%;
@@ -14,11 +15,14 @@
         border: 1px solid #555;
         outline: none;
         padding: 0 1.5rem;
-        margin: 1rem 0 1rem 0;
+        
     }
     .signup_email__error, .signup_name__error , .signup_password__error {
         width: 100%;
+        font-size: 10px;
         height: 1rem;
+        padding-left: 10px;
+        margin: 0.2rem 0 0.8rem 0;
     }
     .signup_button {
         width: 100%;
@@ -26,9 +30,10 @@
         border: none;
         border-radius: 15px;
         margin-top: 1rem;
-        background-color: rgb(7, 7, 7);
+        background-color: #ff4500;
         color: #fff;
         font-size: 1.1rem;
+        cursor: pointer;
     }
     .signup_bottom_info {
         width: 100%;

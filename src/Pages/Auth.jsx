@@ -21,7 +21,7 @@ const Auth = () => {
             <button
               className="auth_btn"
               style={{
-                backgroundColor: !signUpVisible && "black",
+                backgroundColor: !signUpVisible && "#ff4500",
                 color: !signUpVisible && "#fff",
               }}
               onClick={() => setSignupVisible(false)}
@@ -31,7 +31,7 @@ const Auth = () => {
             <button
               className="auth_btn"
               style={{
-                backgroundColor: signUpVisible && "black",
+                backgroundColor: signUpVisible && "#ff4500",
                 color: signUpVisible && "#fff",
               }}
               onClick={() => setSignupVisible(true)}
