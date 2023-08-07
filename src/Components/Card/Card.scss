@@ -28,6 +28,9 @@
     .card_content:focus {
       outline: 0;
     }
+    &:hover > .card_list{
+      transform: rotateY(180deg);
+    }
     .card_list {
       position: relative;
       height: 100%;
@@ -72,13 +75,9 @@
         align-items: center;
         border-radius: 1rem;
         font-family: "Lora", serif;
-        
       }
 
       
-    }
-    .card_list:hover  {
-      transform: rotateY(180deg);
     }
   }
 }
