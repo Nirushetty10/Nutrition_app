@@ -61,11 +61,13 @@ const Reviews = () => {
                 <div className="rating_icons_container">
                   <h1>{element.name}</h1>
                   <p>{element.review}</p>
-                  <i class="fa-solid fa-star fa-lg"></i>
-                  <i class="fa-solid fa-star fa-lg"></i>
-                  <i class="fa-solid fa-star fa-lg"></i>
-                  <i class="fa-solid fa-star fa-lg"></i>
-                  <i class="fa-solid fa-star-half-stroke fa-lg"></i>
+                  <div>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star fa-lg"></i>
+                    <i class="fa-solid fa-star-half-stroke fa-lg"></i>
+                  </div>
                 </div>
               </div>
             </div>

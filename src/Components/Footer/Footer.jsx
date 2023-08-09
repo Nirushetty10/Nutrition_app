@@ -15,20 +15,20 @@ const Footer = () => {
            <h1 className="navListHeading">Help</h1>
            <li>Support</li>
            <li>Knowledges</li>
-           <li>Tutorials</li>
+           {/* <li>Tutorials</li> */}
         </ul>
         <ul className="navList">
            <h1 className="navListHeading">Services</h1>
            <li>Meal planning</li>
            <li>Sports Guide</li>
            <li>Diet Plan</li>
-           <li>Personal Coach</li>
+           {/* <li>Personal Coach</li> */}
         </ul>
         <ul className="navList">
            <h1 className="navListHeading">Company</h1>
            <li>About Us</li>
-           <li>Careers</li>
-           <li>Diet Plan</li>
+           {/* <li>Careers</li> */}
+           {/* <li>Diet Plan</li> */}
            <li>Contact Us</li>
         </ul>
         <ul className="navList">
@@ -40,9 +40,9 @@ const Footer = () => {
       </div>
     </div>
     <div className="footer_sec__bottom">
-      <FacebookIcon />
-      <InstagramIcon />
-      <TwitterIcon />
+      <FacebookIcon style={{fontSize:"35px", cursor:"pointer"}} />
+      <InstagramIcon style={{fontSize:"35px", cursor:"pointer"}} />
+      <TwitterIcon style={{fontSize:"35px", cursor:"pointer"}} />
     </div>
   </div>
 }
