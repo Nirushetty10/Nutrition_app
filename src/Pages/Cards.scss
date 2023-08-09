@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+
+.cards_content_section {
+  height: 100vh;
+  width: 100%;
+  border: 1px solid black;
+  .cards_content_heading {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    h1 {
+      font-size: 3rem;
+      font-family: "Lora", serif;
+      font-weight: 300;
+    }
+  }
+  .cards_content_card_container {
+    display: flex;
+    justify-content: space-around;
+    height: 85%;
+    width: 100%;
+    padding-top: 3rem;
+    .cards_doctor_content {
+      border: 1px solid black;
+      height: 70%;
+      width: 20%;
+      img{
+        height: 100%;
+        width: 100%;
+
+      }
+    }
+  }
+}
