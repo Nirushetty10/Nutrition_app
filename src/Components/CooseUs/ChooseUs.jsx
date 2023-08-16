@@ -4,20 +4,23 @@ import './ChooseUs.scss'
 const chooseData = [
   {
     icon : "fa-solid fa-user-doctor fa-2xl",
-    category: "Specialized Doctors",
-    content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus tempore minus nemo molestias, id soluta. Quos voluptate ratione ducimus."
+    category:"Personalized Weekly Diet Charts",
+    content: "Specialized Doctors",
   },
   {
     icon:"fa-solid fa-kitchen-set fa-2xl",
-    category: "Health Diet Plan",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus tempore minus nemo molestias, id soluta. Quos voluptate ratione ducimus.",
+    category:"Premium Consultations with Certified Sport Nutritionists",
+    content: "Health Diet Plan",
   },
   {
     icon :"fa-solid fa-indian-rupee-sign fa-2xl",
-    category: "At Affordable Prices",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus tempore minus nemo molestias, id soluta. Quos voluptate ratione ducimus.",
+    category:"Fitness-Focused Meal Plans",
+    content: "At Affordable Prices",
+  },
+  {
+    icon :"fa-solid fa-indian-rupee-sign fa-2xl",
+    category:"Continuous Support for Your Health Goals",
+    content: "At Affordable Prices",
   },
 ];
 const ChooseUs = () => {

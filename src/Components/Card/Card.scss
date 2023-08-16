@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Merriweather+Sans:wght@400&display=swap');
 
+
+//  created new one
 .card_container {
   margin-top: 80px;
   height: 100vh;
   width: 100%;
-
+  
   .card_header {
     height: 15%;
     width: 100%;
@@ -13,73 +16,88 @@
     align-items: center;
     h1 {
       font-family: "Lora", serif;
-      font-size: 3.5rem;
-      color: #ff4500;
+      font-size: 46px;
     }
   }
-  .card_content {
-    height: 65%;
+  .flip-container{
     width: 100%;
-
+    height: 65%;
     display: flex;
     justify-content: space-around;
-    padding-top: 1.5rem;
+
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
     perspective: 1000px;
-
-    .card_content:focus {
-      outline: 0;
-    }
-    &:hover > .card_list{
-      transform: rotateY(180deg);
-    }
-    .card_list {
-      position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 6px 0 rgba(217, 11, 11, 0.4);
+    border-radius: 1rem;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #ff4500;
+    color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+    img {
       height: 100%;
-      width: 27%;
+      width: 100%;
+      object-fit: cover;
       border-radius: 1rem;
-      text-align: center;
-      transition: transform 0.6s;
-      box-shadow: 0px 5px 15px 3px rgba(255, 69, 0, 0.3);
-      cursor: pointer;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-      .card_front {
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 1rem;
-        }
-        .header_tags {
-          position: absolute;
-          color: #fff;
-          top: 65%;
-          bottom: 35%;
-          transform: translate(50%, 50%);
-        }
-      }
-      .card_front,
-      .card_back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        overflow: hidden;
-      }
-      .card_back {
-        
-        background-color: #ff4500;
-        color: white;
-        transform: rotateY(180deg);
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1rem;
-        font-family: "Lora", serif;
-      }
+    }
+  }
 
-      
+  .flip-card-back {
+    background-color: #ff4500;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    transform: rotateY(180deg);
+    border-radius: 1rem;
+    font-family: "Lora", serif;
+    overflow: hidden;
+    
+    // padding-top: 7rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      opacity: 0.7;
+    }
+
+    p {
+      margin-top: 1.5rem;
+      letter-spacing: 2px;
+      line-height: 1.5rem;
+      font-family: 'Merriweather Sans', sans-serif;;
     }
   }
 }

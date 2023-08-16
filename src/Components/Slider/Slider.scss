@@ -99,10 +99,10 @@
 
         .home_page__content__contents {
             width: 50%;
-            height: 8rem;
+            height: 12rem;
 
-            h1 {
-                font-size: 4rem;
+            h1  {
+                font-size: 3rem;
                 text-align: center;
                 line-height: 60px;
                 font-family: 'Lora', serif;
@@ -113,15 +113,22 @@
                     color: #FF4500;
                 }
             }
+            h2 {
+                font-size: 2.5rem;
+                text-align: center;
+                line-height: 60px;
+                font-family: 'Lora', serif;
+                color: #fff;
+                word-spacing: 5px;
+            }
             p {
                 font-family: 'Merriweather Sans';
-                padding: 0 6rem;
-                margin-top: 3rem;
+                margin-top: 1.4rem;
                 text-align: center;
-                color: #fff;
-                line-height: 2rem;
-                opacity: 0.7;
-                font-size: 1.2rem;
+                color: #ECF3F6;
+                line-height: 1.7rem;
+                letter-spacing: 1.5px;
+                font-size: 1.1rem;
             }
         }
         .home_page__content__button {

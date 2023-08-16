@@ -61,12 +61,12 @@ const Slider = () => {
         </div>
       </div>
       <div className="home_page__content">
-        <div className="home_page__content__contents">
-          <h1>Stay <span>Fit</span> and <span>Healthy</span> No Matter What</h1>
+        <div className="home_page__content__contents"> 
+          <h1>Welcome to<span> NutriDiet</span> </h1>
+          <h2>Your Personalized Sports Nutrition Partner</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s
+          Are you a dedicated athlete looking to optimize your performance? Look no further! NutriDiet is here to provide tailored diet plans that cater to your individual needs based on your location, BMI, and specific health conditions. Our mission is to fuel your success by combining the power of sports nutrition with expert guidance.
+
           </p>
         </div>
         <div className="home_page__content__button">
