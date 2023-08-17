@@ -130,6 +130,55 @@
                 letter-spacing: 1.5px;
                 font-size: 1.1rem;
             }
+            @media (max-width : 390px) {
+                h1 {
+                    font-size: 1.2rem;
+                    line-height: 10px;
+                }
+                h2 {
+                    font-size: 1rem;
+                    line-height: 20px;
+                    margin-top: 0.5rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1rem;
+                }
+               }
+               @media (min-width : 390px) and (max-width : 768px) {
+                h1 {
+                    font-size: 1.5rem;
+                    line-height: 20px;
+                }
+                h2 {
+                    font-size: 1.2rem;
+                    line-height: 20px;
+                }
+                p {
+                    font-size: 0.6rem;
+                    line-height: 1rem;
+                }
+               }
+               @media (min-width : 768px) and (max-width : 1024px) {
+                h1 {
+                    font-size: 2rem;
+                    line-height: 40px;
+                    
+                }
+                h2 {
+                    font-size: 1.6rem;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1.5rem;
+                }
+               }
+        }
+        @media (max-width : 768px) {
+            .home_page__content__contents {
+                width: 75%;
+            }
         }
         .home_page__content__button {
             width: 50%;
@@ -153,6 +202,11 @@
                 }
     
             }
+            @media (max-width : 768px) {
+                button {
+                    margin: 3rem 1rem 0 1rem;
+                }
+               }
             .first_button {
                 background-color: #FF4500;
                 color: #ffffff ;
@@ -167,6 +221,11 @@
                     background-color: #ff4500;
                     color: #fff;
                 }
+            }
+        }
+        @media (max-width : 600px) {
+            .home_page__content__button {
+                width: 100%;
             }
         }
     }
