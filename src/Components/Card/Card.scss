@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Merriweather+Sans:wght@400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&family=Merriweather+Sans:wght@400&display=swap");
 
 //  created new one
 .card_container {
   margin-top: 80px;
-  height: 100vh;
+  height: 85vh;
   width: 100%;
-  
   .card_header {
     height: 15%;
     width: 100%;
@@ -18,14 +16,58 @@
       font-family: "Lora", serif;
       font-size: 46px;
     }
+    
   }
-  .flip-container{
+  @media (max-width : 390px) {
+    .card_header{
+      height:10%;
+      h1{
+        text-align:center;
+        font-size: 25px;
+      }
+    }
+  
+    
+  
+  @media (min-width : 390px) and (max-width : 768px) {
+    .card_header{
+      height: 10%;
+      h1{
+        text-align:center;
+        font-size: 40px;
+      }
+    
+    }
+    
+}
+  }
+  .flip-container {
     width: 100%;
-    height: 65%;
+    height: 70%;
     display: flex;
     justify-content: space-around;
-
+    
   }
+  @media (max-width : 390px) {
+     .flip-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+     }
+  }
+  @media (min-width : 390px) and (max-width : 768px) {
+    .flip-container{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     gap: 2rem;
+    }
+ }
   .flip-card {
     background-color: transparent;
     width: 100%;
@@ -35,8 +77,8 @@
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    
   }
+  
   .flip-card-inner {
     position: relative;
     width: 75%;
@@ -70,6 +112,10 @@
       border-radius: 1rem;
     }
   }
+  @media (min-width : 390px) and (max-width : 768px){
+    .flip-card-front{
+    }
+  }
 
   .flip-card-back {
     background-color: #ff4500;
@@ -83,8 +129,7 @@
     border-radius: 1rem;
     font-family: "Lora", serif;
     overflow: hidden;
-    
-    // padding-top: 7rem;
+
 
     h1 {
       font-size: 3rem;
@@ -97,7 +142,33 @@
       margin-top: 1.5rem;
       letter-spacing: 2px;
       line-height: 1.5rem;
-      font-family: 'Merriweather Sans', sans-serif;;
+      font-family: "Merriweather Sans", sans-serif;
     }
   }
+  @media (max-width : 390px) {
+    .flip-card-back{
+      h1{
+        font-size: 2rem;
+      }
+      p{
+        line-height: 1rem;
+      }
+    }
+  }
+  
 }
+@media (max-width : 390px) {
+  .card_container{
+    margin-top: 0;
+    height: 150vh;
+  
+  }
+}
+@media (min-width : 390px) and (max-width : 768px) {
+  .card_container{
+    margin-top: 0;
+    height: 150vh;
+  
+  }
+}
+
