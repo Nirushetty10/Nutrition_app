@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap");
+
+.service_layout {
+  width: 100%;
+  height: 100vh;
+//   overflow-y: hidden;
+  position: relative;
+
+  .services_content {
+    font-family: "Merriweather Sans";
+    box-sizing: border-box;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services_background {
+      width: 100%;
+      height: 70%;
+      background-color: #ff4500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 3rem;
+        color: #fdfcfc;
+        margin-top: 2rem;
+      }
+      .services_desc {
+        width: 50%;
+        text-align: center;
+        margin-top: 0.5rem;
+        color: #fff;
+      }
+    }
+    .services_cardSection {
+        width: 100%;
+        height: 65%;
+        position: absolute;
+        bottom: 2rem;
+        padding: 0 120px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+
+        .services_card {
+          height: 100%;
+          background-color: #fdfcfc;
+          text-align: center;
+          padding: 1.5rem;
+          border-radius: 15px;
+          box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .card_category {
+            width: 100%;
+            height: 1.5rem;
+
+            p {
+              font-size: 0.8rem;
+            }
+          }
+          h1 {
+            font-size: 1.5rem;
+          }
+          .card_desc{
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            height: 2rem; 
+          }
+          .card_rate {
+            margin-top: 1.5rem;
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+
+            .rate_desc {
+              font-size: 0.8rem;
+            }
+          }
+          button {
+            width: 10rem;
+            height: 2.5rem;
+            border: none;
+            background-color: #ff4500;
+            color: #fff;
+            border-radius: 15px;
+            font-size: 1rem;
+            margin-top: 1rem;
+
+            &:hover {
+              background-color: #fff;
+              color: #ff4500;
+              border : 1px solid #ff4500;
+            }
+          }
+          .servicesDesc {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .desc_items {
+              display: flex;
+              align-items: center;
+              h5 {
+                font-size: 0.7rem;
+                text-align: start;
+              }
+            }
+            
+          }
+        }
+    }
+  }
+}
