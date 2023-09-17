@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import "./NavBar.scss"
 
 const NavBar = (props) => {
+    const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const navigateToHome = () => {
+        navigate("/")
+    }
   return (
     <div className='nav_bar' style={{backgroundColor : `${props.type  === "auth" ? "black" : ""} `}}>
-        <div className="logo">NutriDiet</div>
+        <div className="logo" onClick={navigateToHome}>NutriDiet</div>
         {props.type === "auth" ? null : <div className="link_section">
             <div className="link_section__link">
                 <ul>

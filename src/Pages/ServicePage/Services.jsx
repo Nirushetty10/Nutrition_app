@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 import "./Services.scss";
 import CheckIcon from '@mui/icons-material/Check';
+import Footer from './../../Components/Footer/Footer';
 
 const data = [ 
   {
@@ -78,6 +79,7 @@ const Services = () => {
             })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

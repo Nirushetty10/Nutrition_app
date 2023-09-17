@@ -4,6 +4,8 @@ import bgImage from "../images/pexels/dan-gold-4_jhDO54BYg-unsplash.jpg";
 import Login from "../Components/Auth/Login";
 import Signup from "../Components/Auth/Signup";
 import { useState } from "react";
+import {ToastContainer, toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Auth = () => {
   const [signUpVisible, setSignupVisible] = useState(true);
@@ -11,6 +13,17 @@ const Auth = () => {
   const handleStateChange = (val) => {
     setSignupVisible(val);
   }
+  const signUphandler = () => {
+    notify();
+    setTimeout(() => {
+      setSignupVisible(false); 
+    }, );
+  }
+
+  const notify = () => {
+    toast.success("User Registered Successfully.. Please Login");
+  }
+
   return (
     <div className="auth-layout">
       <NavBar type="auth" />
@@ -40,7 +53,18 @@ const Auth = () => {
             </button>
           </div>
           {!signUpVisible && <Login signupStateHandler={handleStateChange}/>}
-          {signUpVisible && <Signup signupStateHandler={handleStateChange}/>}
+          {signUpVisible && <Signup onSignup={signUphandler} signupStateHandler={handleStateChange}/>}
+          <ToastContainer 
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </div>
       </div>
     </div>
