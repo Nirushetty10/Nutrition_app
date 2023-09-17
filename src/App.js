@@ -6,13 +6,11 @@ import Auth from './Pages/Auth';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import ContactUs from './Pages/Contact/ContactUs';
 import Services from './Pages/ServicePage/Services';
-import Footer from './Components/Footer/Footer';
-import NavBar from './Components/NavBar/NavBar';
+import Test from './Pages/Test/Test';
 
 function App() {
   return (
     <div>
-      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -20,6 +18,7 @@ function App() {
           <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/services' element={<Services/>} />
+          <Route path='/test' element={<Test/>} />
         </Routes>
       </BrowserRouter>
       
