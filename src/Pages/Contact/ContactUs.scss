@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+
+.contact-container{
+    margin-top: 9.5rem;
+    margin-bottom: 5.5rem;
+    height: 34rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .contact-details{
+        height: 100%;
+        width: 40%;
+        border: none;
+        border-radius: 8px;
+        padding: 2rem;
+        h1{
+            padding-left: 1.5rem;
+            font-family: "Roboto", sans-serif;
+        }
+        button {
+            width: 10rem;
+            height: 3rem;
+            border-radius: 60px;
+            border: none;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            margin-left: 1.2rem;
+        
+            &:hover {
+              color: #ff4500;
+              background-color: #fff;
+            }
+          }
+          .first_button {
+            background-color: #ff4500;
+            color: #fff;
+            border: 2px solid #ff4500;
+          }
+    }
+    .contact-map{
+        height: 85%;
+        width: 50%;
+        border: 1px solid blue;
+        // border: none;
+        border-radius: 8px;
+        .map-container{
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}

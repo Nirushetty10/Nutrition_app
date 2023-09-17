@@ -17,9 +17,9 @@ const NavBar = (props) => {
         {props.type === "auth" ? null : <div className="link_section">
             <div className="link_section__link">
                 <ul>
-                <li><Link to="aboutus" >About</Link></li>
-                    <li><Link to="contact">Contact</Link></li>
-                    <li><Link to="services">Services</Link></li>
+                <li onClick={() => navigate("/aboutus")}>About</li>
+                    <li onClick={() => navigate("/contact")}>Contact</li>
+                    <li onClick={() => navigate("/services")}>Services</li>
                 </ul>
             </div>
             <div className="link_section__button">

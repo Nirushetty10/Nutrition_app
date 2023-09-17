@@ -52,7 +52,7 @@ const Services = () => {
         </div>
         <div className="services_cardSection">
             {data.map(item => {
-              return <div className="services_card">
+              return <div className="services_card" key={item.id}>
                  <div className="card_category">
                   <p>{item.category}</p>
                  </div>
@@ -68,10 +68,12 @@ const Services = () => {
                   </div>
                   <button type="button">Get Started</button>
                   <div className="servicesDesc">
-                     {item.servicesDesc.map(desc => <div className="desc_items">
+                     {item.servicesDesc.map((desc,index) => {
+                    return <div className="desc_items" key={index}>
                       <div className="icon"><CheckIcon style={{"fontSize" : "1.2rem"}}/></div>
                        <h5>{desc}</h5>
-                      </div>)}
+                      </div>
+                    })}
                   </div>
               </div>
             })}
