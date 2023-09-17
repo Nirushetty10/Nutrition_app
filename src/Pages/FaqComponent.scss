@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.faq-container{
+    margin:80px;
+    font-family: 'Roboto';
+}
+.faq-row-wrapper {
+    .faq-title {
+        border: 1px solid red;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        padding: 8px;
+    }
+    
+    .faq-body {
+        
+        .faq-row {
+            
+            border-radius: 10px;
+            margin-bottom: 0.7rem;
+            padding: 8px;
+            border: 1px solid red;
+            
+            // .row-title {
+            // }
+            
+            // .row-content {
+            //     .row-content-text {
+            //     }
+            // }
+        }
+        
+    }
+}

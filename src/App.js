@@ -6,8 +6,7 @@ import Auth from './Pages/Auth';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import ContactUs from './Pages/Contact/ContactUs';
 import Services from './Pages/ServicePage/Services';
-import Footer from './Components/Footer/Footer';
-import NavBar from './Components/NavBar/NavBar';
+
 
 function App() {
   return (
